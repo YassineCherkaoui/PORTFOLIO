@@ -596,3 +596,28 @@ nav ul li a {
 .credits {
   font-size: 13px;
 }
+/* language */
+.carousel{
+  margin-top: 50px;
+  color: black;
+}
+.carousel-inner{
+  height: 100px;
+  color: black;
+}
+.carousel-caption{
+  color: #000000;
+  top: 50%;
+}
+.sr-only{
+    background-color: black;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.blink{
+  margin-top: 8%;
+}
