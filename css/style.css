@@ -15,13 +15,19 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .journal-info video {
   width: 100%;
   height: auto;
   margin-top: -182px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -54,7 +60,8 @@ a:hover {
   transition: all 0.5s ease-in-out 0s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #b8a07e;
   text-decoration: underline;
 }
@@ -106,7 +113,8 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
 }
 
@@ -224,7 +232,8 @@ nav ul li a {
 .active {
   color: #afafaf;
 }
-.container h1{
+
+.container h1 {
   font-size: 46px;
   text-align: center;
   padding: 5px;
@@ -317,6 +326,7 @@ nav ul li a {
 .owl-item {
   float: left;
 }
+
 .services-block span {
   margin: 10px 0;
   position: relative;
@@ -341,7 +351,7 @@ nav ul li a {
 }
 
 
-.services-carousel  .owl-stage-outer {
+.services-carousel .owl-stage-outer {
   overflow: hidden;
 }
 
@@ -369,6 +379,7 @@ nav ul li a {
 .owl-nav {
   display: none;
 }
+
 #portfolio {
   position: relative;
   padding-bottom: 50px;
@@ -401,7 +412,8 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+#portfolio .portfolio-list .nav li:hover,
+#portfolio .portfolio-list .nav li.filter-active {
   color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -426,7 +438,8 @@ nav ul li a {
   max-width: 73%;
 }
 
-#journal,  #journal-blog {
+#journal,
+#journal-blog {
   height: auto;
   width: 100%;
   background: #f7f7f7;
@@ -502,12 +515,13 @@ nav ul li a {
   padding-bottom: 10px;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
 }
 
 
-#contact  #sendmessage {
+#contact #sendmessage {
   color: #18d26e;
   border: 1px solid #18d26e;
   display: none;
@@ -517,7 +531,7 @@ nav ul li a {
   margin: 15px;
 }
 
-#contact  #errormessage {
+#contact #errormessage {
   color: red;
   display: none;
   border: 1px solid red;
@@ -527,7 +541,9 @@ nav ul li a {
   margin: 15px;
 }
 
-#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+#contact #sendmessage.show,
+#contact #errormessage.show,
+#contact .show {
   display: block;
 }
 
@@ -596,28 +612,35 @@ nav ul li a {
 .credits {
   font-size: 13px;
 }
+
 /* language */
-.carousel{
+.carousel {
   margin-top: 50px;
   color: black;
 }
-.carousel-inner{
+
+.carousel-inner {
   height: 100px;
   color: black;
 }
-.carousel-caption{
+
+.carousel-caption {
   color: #000000;
   top: 50%;
 }
-.sr-only{
-    background-color: black;
+
+.sr-only {
+  background-color: black;
 }
-.carousel-control-next-icon{
-    background-color: black;
+
+.carousel-control-next-icon {
+  background-color: black;
 }
-.carousel-control-prev-icon{
-    background-color: black;
+
+.carousel-control-prev-icon {
+  background-color: black;
 }
-.blink{
+
+.blink {
   margin-top: 8%;
 }

@@ -1,12 +1,12 @@
-$(document).ready(function() {
+$(document).ready(function () {
   'use strict';
   $(document).on("scroll", onScroll);
 
-  $('a[href^="#"]').on('click', function(e) {
+  $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
 
-    $('a').each(function() {
+    $('a').each(function () {
       $(this).removeClass('active');
       if ($(window).width() < 768) {
         $('.nav-menu').slideUp();
@@ -16,12 +16,12 @@ $(document).ready(function() {
     $(this).addClass('active');
 
     var target = this.hash,
-        menu = target;
+      menu = target;
 
     target = $(target);
     $('html, body').stop().animate({
       'scrollTop': target.offset().top - 80
-    }, 500, 'swing', function() {
+    }, 500, 'swing', function () {
       window.location.hash = target.selector;
       $(document).on("scroll", onScroll);
     });
@@ -31,7 +31,7 @@ $(document).ready(function() {
   function onScroll(event) {
     if ($('.home').length) {
       var scrollPos = $(document).scrollTop();
-      $('nav ul li a').each(function() {
+      $('nav ul li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
       });
@@ -39,9 +39,9 @@ $(document).ready(function() {
   }
 
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 200 ) {
+    if (scroll > 200) {
       $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass('subpage-nav');
     } else {
@@ -51,14 +51,14 @@ $(document).ready(function() {
     }
   });
 
-  $('.responsive').on('click', function(e) {
+  $('.responsive').on('click', function (e) {
     $('.nav-menu').slideToggle();
   });
 
 
   var typed = $(".typed");
 
-  $(function() {
+  $(function () {
     typed.typed({
       strings: ["Yassine Cherkaoui.", "Designer.", "Full Stack Developer.", "Freelancer.", "21yearsold."],
       typeSpeed: 100,
@@ -69,16 +69,26 @@ $(document).ready(function() {
 
 
   $('.services-carousel').owlCarousel({
-      autoplay: true,
-      loop: true,
-      margin: 20,
-      dots: true,
-      nav: false,
-      responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-    });
+    autoplay: true,
+    loop: true,
+    margin: 20,
+    dots: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 4
+      }
+    }
+  });
 
-  var magnifPopup = function() {
+  var magnifPopup = function () {
     $('.popup-img').magnificPopup({
       type: 'image',
       removalDelay: 300,
@@ -91,7 +101,7 @@ $(document).ready(function() {
 
         duration: 300,
         easing: 'ease-in-out',
-        opener: function(openerElement) {
+        opener: function (openerElement) {
           return openerElement.is('img') ? openerElement : openerElement.find('img');
         }
       }
@@ -100,18 +110,20 @@ $(document).ready(function() {
   magnifPopup();
 
 });
-$(window).load(function(){
+$(window).load(function () {
 
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
+  $('#portfolio-flters li').on('click', function () {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    portfolioIsotope.isotope({
+      filter: $(this).data('filter')
+    });
   });
 
 })
